@@ -111,6 +111,10 @@ func (e *Error) IsOfType(t *Type) bool {
 	return e.isOfType(t)
 }
 
+func (e *Error) IsOfTypeIgnoreTransparent(t *Type) bool {
+	return e.isOfTypeIgnoreTransparent(t)
+}
+
 // Type returns the exact type of this error.
 // With transparent wrapping, such as in Decorate(), returns the type of the original cause.
 // The result is always not nil, even if the resulting type is impossible to successfully type check against.

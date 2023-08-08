@@ -103,6 +103,10 @@ func IsOfType(err error, t *Type) bool {
 	return isOfType(err, t)
 }
 
+func IsOfTypeIgnoreTransparent(err error, t *Type) bool {
+	return isOfTypeIgnoreTransparent(err, t)
+}
+
 // Supertype returns a parent type, if present.
 func (t *Type) Supertype() *Type {
 	return t.parent
