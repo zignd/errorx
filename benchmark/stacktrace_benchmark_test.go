@@ -6,7 +6,7 @@ import (
 	"runtime/debug"
 	"testing"
 
-	"github.com/joomcode/errorx"
+	"github.com/zignd/errorx"
 )
 
 var errorSink error
